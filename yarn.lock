@@ -1986,6 +1986,7 @@ __metadata:
     jsdom: "npm:26.1.0"
     lerna: "npm:9.0.3"
     lint-staged: "npm:13.2.3"
+    perfect-freehand: "npm:^1.2.2"
     prettier: "npm:3.3.3"
     ts-jest: "npm:29.4.1"
     typedoc: "npm:0.27.6"
@@ -9060,6 +9061,13 @@ __metadata:
   dependencies:
     pify: "npm:^3.0.0"
   checksum: 10c0/1332c632f1cac15790ebab8dd729b67ba04fc96f81647496feb1c2975d862d046f41e4b975dbd893048999b2cc90721f72924ad820acc58c78507ba7141a8e56
+  languageName: node
+  linkType: hard
+
+"perfect-freehand@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "perfect-freehand@npm:1.2.2"
+  checksum: 10c0/8f7ae1cd24bdd91b51b06eb8a02bee1b4ecef361df9e3ef9a56aa942e14f59820cccff919eb33831493e12af2a6b7f8617cbdc59bf0b11723f4ffdc8fe325f1a
   languageName: node
   linkType: hard
 

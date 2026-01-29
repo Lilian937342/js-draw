@@ -25,6 +25,7 @@ import { IconElemType } from '../IconProvider';
 import HelpDisplay from '../utils/HelpDisplay';
 import { makePolylineBuilder } from '../../components/builders/PolylineBuilder';
 import createElement from '../../util/dom/createElement';
+import { makePerfectFreehandLineBuilder } from '../../components/builders/PerfectFreehangBuilder';
 
 /** Represents a style that can be applied to a pen tool. */
 export interface PenTypeRecord {
@@ -82,7 +83,7 @@ export default class PenToolWidget extends BaseToolWidget {
 				name: this.localizationTable.roundedTipPen,
 				id: 'freehand-pen',
 
-				factory: makeFreehandLineBuilder,
+				factory: makePerfectFreehandLineBuilder,
 			},
 			{
 				name: this.localizationTable.roundedTipPen2,

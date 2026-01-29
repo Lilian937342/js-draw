@@ -46,5 +46,8 @@
 	"resolutions": {
 		"jsdom": "25.0.1"
 	},
-	"packageManager": "yarn@4.6.0"
+	"packageManager": "yarn@4.6.0",
+	"dependencies": {
+		"perfect-freehand": "^1.2.2"
+	}
 }
