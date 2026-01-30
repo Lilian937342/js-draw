@@ -7,7 +7,7 @@
 	"main": "./src/lib.ts",
 	"bin": "./dist/main.js",
 	"scripts": {
-		"postinstall": "npm run build",
+		"postinstall": "yarn install && yarn run build",
 		"build": "tsc"
 	},
 	"dependencies": {
