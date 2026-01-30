@@ -15,8 +15,8 @@
 		"check-formatting-ci": "prettier --check .",
 		"build-translation-templates": "lerna run build-translation-templates",
 		"translation-template-to-ts": "ts-node scripts/markdownTranslationFormToTs.ts",
-		"preinstall": "git config core.hookspath .githooks",
-		"postinstall": "yarn run build",
+		"preinstall": "node -e \"const fs=require('fs'); const cp=require('child_process'); if(fs.existsSync('.git')) cp.execSync('git config core.hookspath .githooks',{stdio:'inherit'});\"",
+		"postinstall": "npm run build",
 		"publish-ci": "lerna publish from-package --yes",
 		"version-bump": "lerna version --no-push --no-git-tag-version && yarn && yarn build"
 	},

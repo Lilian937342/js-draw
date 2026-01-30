@@ -39,7 +39,6 @@ export default class PerfectFreehandLineBuilder implements ComponentBuilder {
 	private bbox: Rect2;
 	private points: { x: number; y: number; pressure: number }[] = [];
 	private averageWidth: number;
-
 	public constructor(
 		private startPoint: StrokeDataPoint,
 
@@ -74,8 +73,8 @@ export default class PerfectFreehandLineBuilder implements ComponentBuilder {
 		return getStroke(
 			this.points.map((p) => [p.x, p.y, p.pressure]),
 			{
-				simulatePressure: false,
-				thinning: 1,
+				simulatePressure: true,
+				thinning: 0.9,
 				size: this.startPoint.width,
 				streamline: 0,
 				smoothing: 0.5,
